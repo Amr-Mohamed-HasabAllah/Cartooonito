@@ -710,33 +710,10 @@ footer .info a .phone {
 }
 
 .case-details .container {
-    height: calc(100vh - 91px);
-    transform: translateY(95px);
+    height: 100%;
     display: flex;
     align-items: center;
 }
-
-@media (max-width: 950px) {
-    .case-details .container {
-        transform: translateY(98px);
-        height: 130vh;
-    }
-}
-
-@media (max-width: 767px) {
-    .case-details .container {
-        transform: translateY(120px);
-        height: 120vh;
-    }
-}
-
-@media (max-width: 650px) {
-    .case-details .container {
-        transform: translateY(100px);
-        height: 125vh;
-    }
-}
-
 
 .case-details .container .case {
     display: flex;
@@ -746,7 +723,7 @@ footer .info a .phone {
     gap: 20px;
     background-color: var(--bs-white);
     text-align: right;
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
     padding: 20px;
     border-radius: 6px;
@@ -755,7 +732,9 @@ footer .info a .phone {
 @media (max-width: 950px) {
     .case-details .container .case {
         flex-direction: column;
-        width: 85%;
+        width: 100%;
+        height: calc(100% - 71px);
+        transform: translateY(36px);
         text-align: left;
     }
 }
@@ -1359,6 +1338,7 @@ footer .info a .phone {
     box-shadow: 0px 1px 1px #f5deb36e;
     outline: none;
 }
+
 .tableau .digital-art .buy-fields .buy-field .row label select {
     cursor: pointer;
 }
